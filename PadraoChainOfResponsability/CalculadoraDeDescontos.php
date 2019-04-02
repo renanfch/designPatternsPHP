@@ -1,6 +1,5 @@
 <?php
-require "Desconto5Itens.php";
-require "Desconto500Reais.php";
+
 class CalculadoraDeDescontos
 {
     #Padrão chain of responsability
