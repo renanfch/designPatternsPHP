@@ -1,17 +1,19 @@
 <?php
-function autoload($class)
-{
-    include $class . ".php";
-}
 
-spl_autoload_register("autoload");
+require __DIR__ . '/vendor/autoload.php';
+
+use Aplicacao\App\Orcamento;
+use Aplicacao\App\Item;
+
+use Aplicacao\PadraoChainOfResponsability\CalculadoraDeDescontos;
+use Aplicacao\PadraoStrategy\calculadorDeImpostos;
+use Aplicacao\PadraoStrategy\ICMS;
+use Aplicacao\PadraoStrategy\ISS;
 
 $orcamento = new Orcamento(501);
-
 $icms = new ICMS();
 
 $iss = new ISS();
-
 $calculadorDeImposto = new calculadorDeImpostos();
 
 echo $calculadorDeImposto->realizaCalculo($orcamento, $icms);

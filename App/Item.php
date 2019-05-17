@@ -1,4 +1,5 @@
 <?php
+namespace Aplicacao\App;
 
 class Item
 {

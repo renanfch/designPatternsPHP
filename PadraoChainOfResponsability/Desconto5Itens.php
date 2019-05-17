@@ -1,5 +1,9 @@
 <?php
 
+namespace Aplicacao\PadraoChainOfResponsability;
+
+use Aplicacao\App\Orcamento;
+
 class Desconto5Itens implements Desconto
 {
     private $proximoDesconto;

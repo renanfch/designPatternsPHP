@@ -1,4 +1,7 @@
 <?php
+namespace Aplicacao\PadraoChainOfResponsability;
+
+use Aplicacao\App\Orcamento;
 
 class Desconto500Reais implements Desconto
 {

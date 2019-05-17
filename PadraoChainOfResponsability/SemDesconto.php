@@ -1,4 +1,7 @@
 <?php
+namespace Aplicacao\PadraoChainOfResponsability;
+
+use Aplicacao\App\Orcamento;
 
 class SemDesconto implements Desconto
 {

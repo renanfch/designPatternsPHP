@@ -1,4 +1,7 @@
 <?php
+namespace Aplicacao\PadraoStrategy;
+
+use Aplicacao\App\Orcamento;
 
 class calculadorDeImpostos
 {
